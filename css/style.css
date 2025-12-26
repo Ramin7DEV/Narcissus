@@ -1696,53 +1696,89 @@ body {
   }
 }
 
-/* Mobile Responsive - Make flowers larger on small screens */
-@media screen and (max-width: 768px) {
+/* Mobile Responsive - Portrait orientation (phone held vertically) */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  body {
+    align-items: center;
+  }
+
   .flower {
-    transform: scale(1.5);
-    bottom: 5vmin;
+    transform: scale(2.2);
+    bottom: auto;
+    top: 45%;
   }
 
   .flower--1 {
-    left: 35%;
+    left: 50%;
+    transform: scale(2.2) translateX(-50%);
   }
 
   .flower--2 {
-    left: 55%;
+    left: 65%;
+    top: 35%;
+    transform: scale(2);
   }
 
   .flower--3 {
-    left: 15%;
+    left: 25%;
+    top: 55%;
+    transform: scale(1.8);
+  }
+
+  .flower__grass {
+    bottom: -15vmin;
+    transform: scale(1.5);
+  }
+
+  .flower__g-right {
+    bottom: -10vmin;
   }
 
   .moon {
-    width: 8vmin;
-    height: 8vmin;
-    top: 8%;
-    right: 10%;
+    width: 10vmin;
+    height: 10vmin;
+    top: 5%;
+    right: 8%;
   }
 
   .star {
-    width: 0.4vmin;
-    height: 0.4vmin;
+    width: 0.5vmin;
+    height: 0.5vmin;
+  }
+
+  .shooting-star {
+    display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+/* Very small phones */
+@media screen and (max-width: 400px) and (orientation: portrait) {
   .flower {
-    transform: scale(1.8);
-    bottom: 3vmin;
+    transform: scale(2.5);
+    top: 50%;
   }
 
   .flower--1 {
-    left: 30%;
+    left: 50%;
+    transform: scale(2.5) translateX(-50%);
   }
 
   .flower--2 {
-    left: 60%;
+    left: 75%;
+    top: 38%;
+    transform: scale(2.2);
   }
 
   .flower--3 {
-    left: 10%;
+    left: 20%;
+    top: 58%;
+    transform: scale(2);
+  }
+}
+
+/* Landscape orientation on mobile - original layout works fine */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .flower {
+    transform: scale(1.2);
   }
 }
