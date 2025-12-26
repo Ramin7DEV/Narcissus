@@ -1695,3 +1695,54 @@ body {
     opacity: 1;
   }
 }
+
+/* Mobile Responsive - Make flowers larger on small screens */
+@media screen and (max-width: 768px) {
+  .flower {
+    transform: scale(1.5);
+    bottom: 5vmin;
+  }
+
+  .flower--1 {
+    left: 35%;
+  }
+
+  .flower--2 {
+    left: 55%;
+  }
+
+  .flower--3 {
+    left: 15%;
+  }
+
+  .moon {
+    width: 8vmin;
+    height: 8vmin;
+    top: 8%;
+    right: 10%;
+  }
+
+  .star {
+    width: 0.4vmin;
+    height: 0.4vmin;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flower {
+    transform: scale(1.8);
+    bottom: 3vmin;
+  }
+
+  .flower--1 {
+    left: 30%;
+  }
+
+  .flower--2 {
+    left: 60%;
+  }
+
+  .flower--3 {
+    left: 10%;
+  }
+}
