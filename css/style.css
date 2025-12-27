@@ -1716,28 +1716,3 @@ body {
     opacity: 1;
   }
 }
-
-/* Mobile Responsive - Portrait orientation (phone held vertically) */
-/* Scale moderately to show full scene while making flowers bigger */
-@media screen and (max-width: 768px) and (orientation: portrait) {
-  body {
-    transform: scale(1.3);
-    transform-origin: center center;
-  }
-}
-
-/* Very small phones - scale a bit more */
-@media screen and (max-width: 480px) and (orientation: portrait) {
-  body {
-    transform: scale(1.5);
-    transform-origin: center center;
-  }
-}
-
-/* Extra small phones */
-@media screen and (max-width: 400px) and (orientation: portrait) {
-  body {
-    transform: scale(1.6);
-    transform-origin: center center;
-  }
-}
