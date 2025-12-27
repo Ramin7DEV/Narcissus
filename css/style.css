@@ -648,6 +648,7 @@ body {
       transparent,
       transparent 60%);
   -webkit-mask-image: linear-gradient(to top, transparent 30%, var(--leaf-green) 60%);
+  mask-image: linear-gradient(to top, transparent 30%, var(--leaf-green) 60%);
 }
 
 .flower__g-right--1 {
@@ -792,6 +793,7 @@ body {
   border-top-left-radius: 100%;
   border-left: 2vmin solid var(--leaf-green);
   -webkit-mask-image: linear-gradient(to top, transparent 25%, var(--leaf-green) 50%);
+  mask-image: linear-gradient(to top, transparent 25%, var(--leaf-green) 50%);
   position: relative;
   z-index: 1;
 }
@@ -812,6 +814,10 @@ body {
       transparent 50%,
       transparent);
   -webkit-mask-image: linear-gradient(135deg,
+      var(--leaf-green) 40%,
+      transparent 50%,
+      transparent);
+  mask-image: linear-gradient(135deg,
       var(--leaf-green) 40%,
       transparent 50%,
       transparent);
@@ -889,6 +895,9 @@ body {
   -webkit-mask-image: linear-gradient(to top,
       transparent 40%,
       var(--leaf-green) 80%) !important;
+  mask-image: linear-gradient(to top,
+      transparent 40%,
+      var(--leaf-green) 80%) !important;
 }
 
 .long-g--1 .leaf--1 {
@@ -911,6 +920,9 @@ body {
   -webkit-mask-image: linear-gradient(to top,
       transparent 50%,
       var(--leaf-green) 80%) !important;
+  mask-image: linear-gradient(to top,
+      transparent 50%,
+      var(--leaf-green) 80%) !important;
 }
 
 .long-g--2 .leaf--1,
@@ -928,6 +940,9 @@ body {
   -webkit-mask-image: linear-gradient(to top,
       transparent 40%,
       var(--leaf-green) 80%) !important;
+  mask-image: linear-gradient(to top,
+      transparent 40%,
+      var(--leaf-green) 80%) !important;
 }
 
 .long-g--4 {
@@ -939,6 +954,9 @@ body {
 
 .long-g--4 .leaf {
   -webkit-mask-image: linear-gradient(to top,
+      transparent 50%,
+      var(--leaf-green) 80%) !important;
+  mask-image: linear-gradient(to top,
       transparent 50%,
       var(--leaf-green) 80%) !important;
 }
@@ -977,6 +995,9 @@ body {
   border-top-left-radius: 100%;
   border-left: 2vmin solid var(--c);
   -webkit-mask-image: linear-gradient(to top,
+      transparent 20%,
+      var(--dark-color));
+  mask-image: linear-gradient(to top,
       transparent 20%,
       var(--dark-color));
   transform-origin: bottom center;
