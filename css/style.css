@@ -1720,7 +1720,7 @@ body {
 /* Mobile Responsive - Portrait orientation (phone held vertically) */
 /* Scale everything larger and center it to fill the screen better */
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  .long {
+  body {
     transform: scale(2);
     transform-origin: center center;
   }
@@ -1728,7 +1728,7 @@ body {
 
 /* Very small phones - scale even more */
 @media screen and (max-width: 480px) and (orientation: portrait) {
-  .long {
+  body {
     transform: scale(2.3);
     transform-origin: center center;
   }
@@ -1736,7 +1736,7 @@ body {
 
 /* Extra small phones */
 @media screen and (max-width: 400px) and (orientation: portrait) {
-  .long {
+  body {
     transform: scale(2.5);
     transform-origin: center center;
   }
