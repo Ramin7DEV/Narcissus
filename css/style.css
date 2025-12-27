@@ -1718,18 +1718,26 @@ body {
 }
 
 /* Mobile Responsive - Portrait orientation (phone held vertically) */
-/* Simply zoom/scale everything proportionally */
+/* Scale everything larger and center it to fill the screen better */
 @media screen and (max-width: 768px) and (orientation: portrait) {
   .long {
-    transform: scale(1.5);
-    transform-origin: bottom center;
+    transform: scale(2);
+    transform-origin: center center;
   }
 }
 
 /* Very small phones - scale even more */
 @media screen and (max-width: 480px) and (orientation: portrait) {
   .long {
-    transform: scale(1.8);
-    transform-origin: bottom center;
+    transform: scale(2.3);
+    transform-origin: center center;
+  }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 400px) and (orientation: portrait) {
+  .long {
+    transform: scale(2.5);
+    transform-origin: center center;
   }
 }
